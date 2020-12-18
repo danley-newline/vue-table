@@ -1,18 +1,19 @@
 import Vue from 'vue'
 import App from './App.vue'
-import { store } from './store'
-import { BootstrapVue } from 'bootstrap-vue'
+import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import * as _ from  'lodash'
-import VueGoodTablePlugin from 'vue-good-table';
-import 'vue-good-table/dist/vue-good-table.css'
+import Carousel3d from 'vue-carousel-3d';
+import {apolloProvider} from './api/graphql/provider';
+import VueApollo from "vue-apollo";
 
-Vue.use(VueGoodTablePlugin);
+Vue.use(VueApollo);
 Vue.use(BootstrapVue);
-
+Vue.use(IconsPlugin)
+Vue.use(Carousel3d);
 
 
 new Vue({
   el: '#app',
-  store,
+  apolloProvider,
   render: h => h(App)
 })

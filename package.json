@@ -1,0 +1,62 @@
+{
+  "name": "table-client",
+  "description": "A Vue.js project",
+  "main": "index.js",
+  "version": "1.0.0",
+  "author": "daniel kacou <aka.kacou@smile.ci>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+  },
+  "dependencies": {
+    "apollo-boost": "^0.4.9",
+    "apollo-cache-inmemory": "^1.6.6",
+    "apollo-client": "^2.6.10",
+    "apollo-link": "^1.2.14",
+    "apollo-link-http": "^1.5.17",
+    "axios": "^0.20.0",
+    "bootstrap": "^4.5.3",
+    "bootstrap-vue": "^2.18.1",
+    "express": "^4.15.2",
+    "graphql": "^15.4.0",
+    "graphql-tag": "^2.11.0",
+    "hooper": "^0.3.4",
+    "lodash": "^4.17.20",
+    "portal-vue": "^2.1.7",
+    "swiper": "^6.3.5",
+    "vue": "^2.5.11",
+    "vue-apollo": "^3.0.5",
+    "vue-awesome-swiper": "^4.1.1",
+    "vue-carousel": "^0.18.0",
+    "vue-carousel-3d": "^1.0.1",
+    "vue-good-table": "^2.21.0",
+    "vue-l-carousel": "^1.1.0",
+    "vue-lory": "0.0.5",
+    "vue-resource": "^1.5.1",
+    "vue-router": "^3.4.3",
+    "vue-slick-carousel": "^1.0.6",
+    "vue-stepper": "^1.4.2",
+    "vueperslides": "^2.10.9",
+    "vuex": "^3.5.1"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "cross-env": "^5.0.5",
+    "css-loader": "^0.28.7",
+    "file-loader": "^1.1.4",
+    "vue-loader": "^13.0.5",
+    "vue-template-compiler": "^2.4.4",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.9.1"
+  }
+}
